@@ -11,6 +11,10 @@ TIME_BUDGET = 300
 class Tokenizer:
     def __init__(self):
         self.enc = tiktoken.get_encoding("cl100k_base")
+    
+    @classmethod
+    def from_directory(cls, directory=None):
+        return cls()
     def encode(self, text):
         return self.enc.encode(text)
     def decode(self, tokens):
