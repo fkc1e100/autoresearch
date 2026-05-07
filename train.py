@@ -465,7 +465,7 @@ FINAL_LR_FRAC = 0.0     # final LR as fraction of initial
 
 # Model size
 DEPTH = 4               # number of transformer layers (Reduced from 8 to avoid OOM with large vocab!)
-DEVICE_BATCH_SIZE = 8  # Reduced from 32 to avoid OOM on T4!
+DEVICE_BATCH_SIZE = 2  # Reduced from 8 to avoid OOM on T4!
 
 # ---------------------------------------------------------------------------
 # Setup: tokenizer, model, optimizer, dataloader
